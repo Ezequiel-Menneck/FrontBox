@@ -35,6 +35,10 @@
 /* 1. Estilos gerais
 /**********************************/
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--clr-white);
 	font-family: var(--ff-primary);
@@ -321,7 +325,73 @@ img {
 /* 8. Newsletter
 /**********************************/
 
+.newsletter {
+	background: var(--clr-green-light)
+}
+
+.newsletter-c {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.newsletter-info {
+	flex: 1 1 260px;
+	padding-left: 10px;
+}
+
+.newsletter-info__title {
+	font-size:2.62rem;
+	font-weight: bold;
+}
+
+.newsletter-info__descricao {
+	font-style: italic;
+}
+
+.newsletter-form {
+	flex: 2 1 260px;
+}
+
+.newsletter-form__input {
+	font-size: 1.25rem;
+	width: 325px;
+	color: black;
+	font-style: italic;
+	font-family: var(--ff-primary);
+	border: 10px solid var(--clr-pink-dark);
+	padding: 10px;
+	margin: 0;
+	border-radius: 0px;
+}
+
+.newsletter-form__button {
+	width: 192px;
+	font-family: var(--ff-primary);
+	font-size: 2.25rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: var(--clr-pink-dark);
+	color: black;
+	cursor: pointer;
+	padding: 15px;
+}
+
 /**********************************/
 /* 9. Footer
 /**********************************/
 
+.footer {
+	background-color: var(--clr-pink-light);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 55px calc((100% - 960px) / 2);
+}
+
+.footer__copyright, .footer__logo {
+	padding-left: 10px;
+	padding-right: 10px;
+}
